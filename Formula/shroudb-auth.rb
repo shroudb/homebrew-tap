@@ -1,7 +1,7 @@
 class ShroudbAuth < Formula
   desc "Authentication and authorization service for ShrouDB"
   homepage "https://github.com/shroudb/shroudb-auth"
-  version "0.1.1"
+  version "0.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do

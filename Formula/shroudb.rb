@@ -1,7 +1,7 @@
 class Shroudb < Formula
   desc "Encrypted credential store — server and CLI"
   homepage "https://github.com/shroudb/shroudb"
-  version "0.1.3"
+  version "0.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
