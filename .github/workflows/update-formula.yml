@@ -1,0 +1,47 @@
+name: Update Formula
+
+on:
+  workflow_dispatch:
+    inputs:
+      formula:
+        description: "Formula to update (shroudb, shroudb-transit, shroudb-auth)"
+        required: true
+        type: choice
+        options:
+          - shroudb
+          - shroudb-transit
+          - shroudb-auth
+      version:
+        description: "Release version (without v prefix, e.g. 0.2.0)"
+        required: true
+        type: string
+
+  repository_dispatch:
+    types: [formula-update]
+
+jobs:
+  update:
+    name: Update ${{ github.event.inputs.formula || github.event.client_payload.formula }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORMULA: ${{ github.event.inputs.formula || github.event.client_payload.formula }}
+      VERSION: ${{ github.event.inputs.version || github.event.client_payload.version }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Update formula
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          chmod +x scripts/update-formula.sh
+          ./scripts/update-formula.sh "$FORMULA" "$VERSION"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "Formula/${FORMULA}.rb"
+          git commit -m "Update ${FORMULA} to v${VERSION}"
+          git push
