@@ -7,12 +7,12 @@ class Shroudb < Formula
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d080b3af813895fd9c3770a1a89b5bec310aa7194071787fa4a62ffceae2df31"
+      sha256 "a25c2094583fa2c88209ef9b476d808261c86761000dd026c09f185be6f1a858"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d12222b160556593e1d610f372ade86011852f75b1a1bae34af6cd31f6e3c433"
+      sha256 "5a9674b2ecfd263f78609c54747d4d34283ee6c45b3d02de6fe11338cb2b5fd9"
     end
   end
 
