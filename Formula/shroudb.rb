@@ -1,18 +1,18 @@
 class Shroudb < Formula
   desc "Encrypted credential store — server and CLI"
   homepage "https://github.com/shroudb/shroudb"
-  version "0.1.1"
+  version "0.1.3"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "fd7d62be6cd54b731243f7620d2715e55ca7c312a6a8dd64d56e6fe44fff36c7"
+      sha256 "71f12434f2e9652251eae002444c9d6b8b88000cba90be2f26723b562b896094"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "78adbfe1b216c85837ee816d96bb2dd0eefec3d5f1c5fdf70b94f603d0ee5257"
+      sha256 "fb4903c8f697bf938f01d456f6b19fdfd775cbb6bbcdd6a656b3b340a4d991bf"
     end
   end
 
