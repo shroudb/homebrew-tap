@@ -24,6 +24,7 @@ case "$FORMULA" in
   shroudb)         REPO="shroudb/shroudb" ;;
   shroudb-transit) REPO="shroudb/shroudb-transit" ;;
   shroudb-auth)    REPO="shroudb/shroudb-auth" ;;
+  shroudb-veil)    REPO="shroudb/shroudb-veil" ;;
   *) echo "Unknown formula: $FORMULA" >&2; exit 1 ;;
 esac
 
