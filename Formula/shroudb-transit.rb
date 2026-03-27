@@ -7,12 +7,12 @@ class ShroudbTransit < Formula
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-transit/releases/download/v#{version}/shroudb-transit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c1dee45384babc1f7a4ccd5b5ce324f1efe2fed044ce2434a607b29ade1bef75"
+      sha256 "__SHA256_NOT_FOUND__"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-transit/releases/download/v#{version}/shroudb-transit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "9b348c322731282fb668509522ef4a2ea97d0121ebe9b4163a87b2c2f36310b3"
+      sha256 "__SHA256_NOT_FOUND__"
     end
   end
 
