@@ -1,18 +1,18 @@
 class ShroudbAuth < Formula
   desc "Authentication and authorization service for ShrouDB"
   homepage "https://github.com/shroudb/shroudb-auth"
-  version "0.1.3"
+  version "0.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-auth/releases/download/v#{version}/shroudb-auth-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "4d99dd3c63d16373fd243b544f7baba1ad97404cafab102a4e05ca47c0d0e217"
+      sha256 "__SHA256_NOT_FOUND__"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-auth/releases/download/v#{version}/shroudb-auth-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d8ed280ea17ac7ddc3338c7e4234d3778843bd04ac575b8fa6a0c6a7180e5bc6"
+      sha256 "__SHA256_NOT_FOUND__"
     end
   end
 
