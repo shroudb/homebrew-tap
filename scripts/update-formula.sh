@@ -21,7 +21,7 @@ fi
 
 # Map formula name to GitHub repo
 case "$FORMULA" in
-  shroudb)         REPO="shroudb/shroudb" ;;
+  shroudb|shroudb-shroudb) REPO="shroudb/shroudb" ;;
   shroudb-transit) REPO="shroudb/shroudb-transit" ;;
   shroudb-auth)    REPO="shroudb/shroudb-auth" ;;
   shroudb-veil)    REPO="shroudb/shroudb-veil" ;;
