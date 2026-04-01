@@ -1,7 +1,7 @@
 class ShroudbVeil < Formula
   desc "ShrouDB Veil — encrypted search over E2EE data"
   homepage "https://github.com/shroudb/shroudb-veil"
-  version "1.2.6"
+  version "1.2.7"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
