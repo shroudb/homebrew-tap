@@ -1,7 +1,7 @@
 class ShroudbShroudb < Formula
   desc "Encrypted versioned state store — server and CLI"
   homepage "https://github.com/shroudb/shroudb"
-  version "1.0.4"
+  version "1.0.5"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
