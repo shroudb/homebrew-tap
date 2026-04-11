@@ -1,30 +1,30 @@
 class Shroudb < Formula
-  desc "Encrypted credential store — server and CLI"
+  desc "Encrypted key-value database with namespaces, versioning, and RESP3 protocol"
   homepage "https://github.com/shroudb/shroudb"
-  version "0.1.3"
+  version "1.0.10"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
-      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "71f12434f2e9652251eae002444c9d6b8b88000cba90be2f26723b562b896094"
+      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "__SHA256_MACOS_X86_64__"
     end
 
     on_arm do
-      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "fb4903c8f697bf938f01d456f6b19fdfd775cbb6bbcdd6a656b3b340a4d991bf"
+      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "__SHA256_MACOS_AARCH64__"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b33615bdfa8bc7b9dccf0d1a3a41bac13b3e9ba9958f694bb816ca65b75d0cf5"
+      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "c9f074737e696612ee3fd08d959d6e14e7e9a998a40413b3afa93d436943421d"
     end
 
     on_arm do
-      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9b2b8cd1b7c71cfd1f553945533ddad9ff7e1b0a19d3a9118a12df45e63b99ce"
+      url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "cdfe2844ef4a040a72a80ab6465455790dc310d95cd16e1b9023391bb2bd1405"
     end
   end
 

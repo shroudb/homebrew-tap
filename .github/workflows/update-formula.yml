@@ -4,15 +4,23 @@ on:
   workflow_dispatch:
     inputs:
       formula:
-        description: "Formula to update (shroudb, shroudb-transit, shroudb-auth)"
+        description: "Formula to update"
         required: true
         type: choice
         options:
           - shroudb
-          - shroudb-transit
-          - shroudb-auth
+          - shroudb-cipher
+          - shroudb-sigil
+          - shroudb-forge
+          - shroudb-chronicle
+          - shroudb-sentry
+          - shroudb-courier
+          - shroudb-keep
+          - shroudb-veil
+          - shroudb-stash
+          - shroudb-moat
       version:
-        description: "Release version (without v prefix, e.g. 0.2.0)"
+        description: "Release version (without v prefix, e.g. 1.5.0)"
         required: true
         type: string
 
