@@ -1,30 +1,30 @@
 class ShroudbSigil < Formula
   desc "Credential envelope engine with encrypted PII storage"
   homepage "https://github.com/shroudb/shroudb-sigil"
-  version "1.9.0"
+  version "1.9.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-sigil/releases/download/v#{version}/shroudb-sigil-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "ee8082f1af9f1f22afff562ac3927b10ec511193550a1ce6b4054633ecf4401f"
+      sha256 "7898f6264a80003bc9b16b7b90019d859052884fed267f58de0b0208ff830e81"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-sigil/releases/download/v#{version}/shroudb-sigil-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e4a5195855ae72cd0ba128ce1ad9c5d3fe14cd03470ed9056c0baa77369e696b"
+      sha256 "b68e94e523e6ee0beef7d1e23426a8d0a523a489ea5c33b7d0e393ef16c97212"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-sigil/releases/download/v#{version}/shroudb-sigil-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "5e5907cb3b21fc11ddc1ddd42641ed3d118ee8bec6c6baec54bcda0169fc6cfa"
+      sha256 "9d7ab953c4e663d221b04e3e022c8e6d17666afac7643826f71600e866ec928d"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-sigil/releases/download/v#{version}/shroudb-sigil-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "517314abf66d0115d5772baaae35a57db97ba39d07af679704f2c6e0fb792abb"
+      sha256 "6c12df7def91a63cbca294c07cbd298e13fc1e51561d79c28b42729d04aa73db"
     end
   end
 
