@@ -1,30 +1,30 @@
 class ShroudbCipher < Formula
   desc "Encryption-as-a-service engine with key lifecycle management"
   homepage "https://github.com/shroudb/shroudb-cipher"
-  version "1.4.15"
+  version "1.5.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-cipher/releases/download/v#{version}/shroudb-cipher-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "379b26a5361416958da4055a03f2f52943637a3ca4492820eb05df157762c72c"
+      sha256 "4cf8ba6b5685a7e2e216d28e531b293ba4af55c26e93473c9e1a29eeab2b5a0a"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-cipher/releases/download/v#{version}/shroudb-cipher-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1e01bde0636a57360c18ac916c1e499a9b44c9c6c7329d66810bf3a44becafd5"
+      sha256 "2269cfc5c85b75a915d06a1c046809c881415ff6e87758c6a555f6f4d1b5d933"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-cipher/releases/download/v#{version}/shroudb-cipher-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1f58a0d5f69af01dce1d4dcab95da0e04eb176c44989dcdefc5349e4a71c3b1d"
+      sha256 "5bdbc6657c96a65d1a6d65c2ad3a69d75072fb98f5605f9628f74780e2c75c76"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-cipher/releases/download/v#{version}/shroudb-cipher-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9716cc765c9793cadb90fc75a44154c787c7addf16cbe2efc3de1dc6b1f183b4"
+      sha256 "fde4844298725199b8ebea4c4961e7e11c7ac14e1ea0948ac451ca90c7df9d04"
     end
   end
 
