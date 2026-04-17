@@ -1,30 +1,30 @@
 class Shroudb < Formula
   desc "Encrypted key-value database with namespaces, versioning, and RESP3 protocol"
   homepage "https://github.com/shroudb/shroudb"
-  version "1.0.12"
+  version "1.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "4484af23d2b04eb940f2dde47437b85d4e4a6da85f229d9266476a5a675fc141"
+      sha256 "504483698b6149382bb4ae7576975e6d7b0ac3f8162fabcd2097da082e93535e"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "888f3a40c41fc2fc3e25f3506b57508fff09a0bbe006167ce99ed94bbe9d6caf"
+      sha256 "4c4da5401248bb74245a99b6bb9647e71e05fd306c018498a57e71b82052fefa"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "25ac32388371ce3930eb4672ea77b7bb8f19faafde4f9b41449745590714f21f"
+      sha256 "7eb600461c106ff2d75c20072d4f663849a0616bc3e193ae8bc5631eedc40b1d"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb/releases/download/v#{version}/shroudb-shroudb-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e80c3111a7d8a236afe52bd6d7c2c53fbaef3740e9a97f4148008c921520d225"
+      sha256 "90afaf4518c3318a73a7387af7c596d0cf24f904fa1ed4b2d27a49f9e64d27e1"
     end
   end
 
