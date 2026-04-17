@@ -1,30 +1,30 @@
 class ShroudbMoat < Formula
   desc "Unified security hub embedding all ShrouDB engines in a single binary"
   homepage "https://github.com/shroudb/shroudb-moat"
-  version "2.0.2"
+  version "2.0.3"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-moat/releases/download/v#{version}/shroudb-moat-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "513886f6eb02ca5aab23f4c91de96199a9913d146d4ab46d7c5e284bf3afbdf7"
+      sha256 "c0be2c096b0c3dfb38528319ad6ae737ea37bc3b2744bbd7b04b81bcead83b75"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-moat/releases/download/v#{version}/shroudb-moat-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b903d5309b9c93feac9bf3ddde19c65c011236aee885059fedf9319c996b7c68"
+      sha256 "9a284c014799903b6f35de9bcee372dcd760384b606a7a6263bca2307785b647"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-moat/releases/download/v#{version}/shroudb-moat-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c03e4aa307453cf37d95f31357099f47234f5a7ec261f141c9014790d1732be6"
+      sha256 "ab2b2ecd9d1765905771014cf6c1c68c43e162d21dfe4fd446b2ef93a4b04b2c"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-moat/releases/download/v#{version}/shroudb-moat-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e70457b682d55387167d2de0378c3cdafd5dfae6ede05e969f88fee075e64201"
+      sha256 "6246da6b66ea673152ba7abd41927eece8f1d24d5bec8ea69fb1b21dc541bc0e"
     end
   end
 
