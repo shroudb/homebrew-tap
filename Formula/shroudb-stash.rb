@@ -1,30 +1,30 @@
 class ShroudbStash < Formula
   desc "S3-backed encrypted blob storage with fingerprinting and crypto-shred"
   homepage "https://github.com/shroudb/shroudb-stash"
-  version "0.6.0"
+  version "0.6.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-stash/releases/download/v#{version}/shroudb-stash-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2f4f6fb903033e91d754824339a620bad092d63af0fe49a37b5b0dfa5f809425"
+      sha256 "cfe0fea894a8fb18b9d07d3d192da4bfe4caf9c233797f1a3bc7fd8c0d3c578e"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-stash/releases/download/v#{version}/shroudb-stash-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "ebd87c6c2b749e2b009956f941250c6ce681ecd9ca4fdea6a98db92c7a8ae362"
+      sha256 "58f038ec6dfbc8f02733c1fb0c27f831a81958b4808a46d46f11f77a7e7bba97"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-stash/releases/download/v#{version}/shroudb-stash-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "3376b2b2f44c86c69175a397ecad0c385009a1198b35e30b5007affb891eaefd"
+      sha256 "543239f28ecd68116a90ddc7cb86b926791cec7cfedcea44e649b34279837515"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-stash/releases/download/v#{version}/shroudb-stash-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "47ddcb0c52dec01d213f5db886b9693e436a4d10722b9b1a6a49e1e501715d2a"
+      sha256 "156341f6e2b8108add27932e962924defcf14e6972d807cb80b78795619b762f"
     end
   end
 
