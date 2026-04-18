@@ -37,6 +37,7 @@ case "$FORMULA" in
   shroudb-keep)       REPO="shroudb/shroudb-keep" ;;
   shroudb-veil)       REPO="shroudb/shroudb-veil" ;;
   shroudb-stash)      REPO="shroudb/shroudb-stash" ;;
+  shroudb-scroll)     REPO="shroudb/shroudb-scroll" ;;
   shroudb-moat)       REPO="shroudb/shroudb-moat" ;;
   *) echo "Unknown formula: $FORMULA" >&2; exit 1 ;;
 esac
