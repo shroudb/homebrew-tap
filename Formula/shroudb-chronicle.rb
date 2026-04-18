@@ -1,30 +1,30 @@
 class ShroudbChronicle < Formula
   desc "Tamper-evident audit log engine with hash-chained events and analytics"
   homepage "https://github.com/shroudb/shroudb-chronicle"
-  version "1.10.0"
+  version "1.11.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-chronicle/releases/download/v#{version}/shroudb-chronicle-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "357b4d831e145184bd4e9ead84af531268a5a870825d36200af5cea067d5971c"
+      sha256 "4aa039c1c9147360ea4ea32990801c850b71750d2c0e3b3cca2a1b3157e72382"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-chronicle/releases/download/v#{version}/shroudb-chronicle-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "c892251d2255b94a3efabc7af5023a4a6df5d6b6f917f92161c6ef4e55ef3c24"
+      sha256 "f95aa57f06c07e57bcfa7a66dfe222cfb5ddf54c80591173ab325904c28ca44f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-chronicle/releases/download/v#{version}/shroudb-chronicle-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f7abf33aacc2beb92df0c2ffa9a4338cef07770f92101576294d4908c9000fb8"
+      sha256 "7daa8a8aa13820bb060cafd1475977a0236016a2a13e7fa1efa381546635979b"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-chronicle/releases/download/v#{version}/shroudb-chronicle-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f79615992536845abbf03ae4c55272d04a136b4e59c3db6462ea1ba1ea1d7d67"
+      sha256 "4e29338fe0529651bf255cb9426ff6ec254035200d56c586c8c2d9458e161d09"
     end
   end
 
