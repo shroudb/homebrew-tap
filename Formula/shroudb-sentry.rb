@@ -1,30 +1,30 @@
 class ShroudbSentry < Formula
   desc "Policy-as-code authorization engine with signed JWT decisions"
   homepage "https://github.com/shroudb/shroudb-sentry"
-  version "1.5.0"
+  version "1.5.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-sentry/releases/download/v#{version}/shroudb-sentry-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "29ecae89076c3fdf7b9512a4fd5a669adfba8885ead1cf587e05e5f795f04e17"
+      sha256 "042a0cd515951dbc5f67075e1399d44fa72af1c057ecab64510a8f76e30b92d3"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-sentry/releases/download/v#{version}/shroudb-sentry-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "fbe898d88534360d23a880abeb1ca1c88079f5d560b249ff5f534ee9e3281757"
+      sha256 "d3071b2750495c268d20471c56d217816ffc0b4efd5d07b4bb239dfbad53885a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-sentry/releases/download/v#{version}/shroudb-sentry-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c934d64d75b6448aecaccd7701f851918b311ff8be9fc3528b12e17dc8a563fa"
+      sha256 "10aabe738482c9863e06b340171eaeee02d68fb520d1156436f37075ff0825e8"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-sentry/releases/download/v#{version}/shroudb-sentry-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "edfbf96e912389873ef8a43e930635d4628794f6c4511033d36771305ee2cb2a"
+      sha256 "578e6affee382223ba9ce2802ecf8538cb76b3e83577e02cc1522e70e5b92c05"
     end
   end
 
