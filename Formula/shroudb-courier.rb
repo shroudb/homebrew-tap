@@ -1,30 +1,30 @@
 class ShroudbCourier < Formula
   desc "Secure notification delivery with SMTP, webhook, and WebSocket adapters"
   homepage "https://github.com/shroudb/shroudb-courier"
-  version "1.5.1"
+  version "1.5.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-courier/releases/download/v#{version}/shroudb-courier-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "bd64311f11eb17eafcaf53af0c9bdc7bbca9a16145f05852447fdb0292ffdc07"
+      sha256 "6707d44fdbeaeead263c616482f6999af8831421a00f9681ce0e4fa7bce9b7e6"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-courier/releases/download/v#{version}/shroudb-courier-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "fe753a72456938bac25124c8cdc0e6fa88e294e63ae071fde7dc3f6670e70572"
+      sha256 "5cf95b495b22bed91bf302ed9f8a3382817ebbc38a255ccd186acad6b949f76f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-courier/releases/download/v#{version}/shroudb-courier-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a5f27d3a0650c72959fa989c187e869ad6e52d94d79d2048b531facf0deb96f7"
+      sha256 "3834760562efd282032ddc261348ad70daebd137c1f3132658164af6a64d9ce1"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-courier/releases/download/v#{version}/shroudb-courier-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "03c93ce27c3a92a01fbec0dcbfef0e1612957dbc1ed5ebe11ac1ea670bb8e097"
+      sha256 "a70a7bca76caa223ad01348a465393da3d70bff89658c60b60fef4ab5e207828"
     end
   end
 
