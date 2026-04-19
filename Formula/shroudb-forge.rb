@@ -7,24 +7,24 @@ class ShroudbForge < Formula
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "7f5594563b2f5a2f46df15a7dba6a1252bb502f423485ec3235d276dd87d94ba"
+      sha256 "d9f5bcd19fd5e12f30e4018c7371bd087da2a10ced3b5dfd8ade7659a1152e9d"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8c17a6a21e927211e4c5c7c2a03bf38bac9fe3dc5835521587d5f2fdccc8615d"
+      sha256 "2cdd3938aab33f019fe3e1bc08e51c9be9ed7e403c19f4190c02e85686e6231b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c8f658bedfee0462524a50884ab5b23f722f7c95aaa7e3c7877b3e7bc7248fc6"
+      sha256 "e5bd259c80e1e39c6ad67ba036a5f4bf34b578345e9949636fe91099b973ff92"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "18e20a658a1cdb43bc729f0f4a5609c0e05f0b0762a14eece9237066b070cdc3"
+      sha256 "f89b1000c5e2387ce4054e4900fb040c35a5f8d3700339c67728d64ccdddada6"
     end
   end
 
