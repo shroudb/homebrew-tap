@@ -1,30 +1,30 @@
 class ShroudbKeep < Formula
   desc "Secrets manager with path-based access control and versioning"
   homepage "https://github.com/shroudb/shroudb-keep"
-  version "1.8.1"
+  version "1.9.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-keep/releases/download/v#{version}/shroudb-keep-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "eb654984db2bc57e33b3207c8bc4d29831086c4d62ac42ca4529abc2225274ff"
+      sha256 "69c69719b598716845cd5676bd340e2fe3dac687e2cd9685a505b1a34be7f2b0"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-keep/releases/download/v#{version}/shroudb-keep-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "30d422c991c7851c64efc9fe036b8b506746ccb7d7a466bc270cefe157e642d5"
+      sha256 "590a718b7528d5d5d6624ca643cf163b1b3fb87c65b4cbcfcb86179bdc892677"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-keep/releases/download/v#{version}/shroudb-keep-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "64a6d7fb97f55f760a136a78b7f4a083b67d5d2626506eeec8be138f433b0820"
+      sha256 "e31a38bf173fbaf8dd3397989af6f9b08d435bfb3cc0ab8f894d2659f4ba71af"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-keep/releases/download/v#{version}/shroudb-keep-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0e5fa090eca175f84c29bbe56980d6cfd9645253149f1f132e711a2d672d9181"
+      sha256 "731cb72d98c1df88e6d8382934ea8e64ea4922cac30a8ca4e868035a270be484"
     end
   end
 
