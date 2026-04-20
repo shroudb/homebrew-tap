@@ -1,30 +1,30 @@
 class ShroudbVeil < Formula
   desc "Encrypted search engine with blind indexing over E2EE data"
   homepage "https://github.com/shroudb/shroudb-veil"
-  version "1.9.0"
+  version "1.9.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-veil/releases/download/v#{version}/shroudb-veil-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b1074493410527c1b8fe22d220327cc89f5baac3dd17573384433ac0fe4b1d06"
+      sha256 "9823c10cb7738ef4abe44b2bc8d472bf1ceca0ace888bf2b37fdfbe1b3e43b1b"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-veil/releases/download/v#{version}/shroudb-veil-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "5bd9ffa024b7eb240e4e57a55a847497035cc1d5af2aba781932fea0989bdc09"
+      sha256 "93e26d327dc0a29bce18797353d2458d091c7113b2512dc51f9f602e0f04dd34"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-veil/releases/download/v#{version}/shroudb-veil-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c52fe57cf75d775aa659595ab3982cff09431d8f17d76269ec9d851a0f162582"
+      sha256 "e5e8ecfc25587222b816597fd9126fc47041f1b2d3399c5c422b91301396b832"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-veil/releases/download/v#{version}/shroudb-veil-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c510331f8fe2a8ca1011474e46a1bdfe59f880e3fcf4885c1ca3132b160a8a19"
+      sha256 "e7d047f11e5397dc96ff866eb8af3bfc4f2cd356c3b15d3d3dba933bd889adab"
     end
   end
 
