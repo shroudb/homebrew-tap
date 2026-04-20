@@ -1,30 +1,30 @@
 class ShroudbForge < Formula
   desc "Internal Certificate Authority with short-lived TLS certificates and OCSP"
   homepage "https://github.com/shroudb/shroudb-forge"
-  version "2.0.0"
+  version "2.0.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_intel do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d9f5bcd19fd5e12f30e4018c7371bd087da2a10ced3b5dfd8ade7659a1152e9d"
+      sha256 "afa8d879fbdabcd188b35565edad8654bb24f211765318476fccae68ad217f80"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "2cdd3938aab33f019fe3e1bc08e51c9be9ed7e403c19f4190c02e85686e6231b"
+      sha256 "a899e19abd0c3c765729f2835bb5caabe4322fbe5eb2fb471490acdfc1fb634a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e5bd259c80e1e39c6ad67ba036a5f4bf34b578345e9949636fe91099b973ff92"
+      sha256 "eb7e490ef442eb973d754d616311598d92391bf015f5d983adbcd69dde28de15"
     end
 
     on_arm do
       url "https://github.com/shroudb/shroudb-forge/releases/download/v#{version}/shroudb-forge-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f89b1000c5e2387ce4054e4900fb040c35a5f8d3700339c67728d64ccdddada6"
+      sha256 "e389ee24560d1bc70ac38ab527b21235ac2e5f8c419e2cd0f799ab9e9856bc3a"
     end
   end
 
